@@ -97,23 +97,3 @@ wtfReverse()
 
 /** Fonction 9  */
 
-function nine() {
-  logo = document.querySelector("div.navbar.navbar-dark.bg-dark.box-shadow > div > a");
-  body = document.querySelector("body");
- 
-    logo.addEventListener('keydown', event => {
-      if (event.keyCode === 65) { // A 
-        body.classList.add("col-4");
-      } else if(event.keyCode === 89 ) { // Y        
-        body.classList.add("col-4");
-        body.classList.add("offset-md-4");
-      } else if (event.keyCode === 80) { // P
-        body.classList.add("col-4");
-        body.classList.add("offset-md-8");
-      } else if (event.keyCode === 66) { // B
-        body.classList.remove("col-4");
-        body.classList.remove("offset-md-4");
-        body.classList.remove("offset-md-8");
-      };      
-    }); 
-};
